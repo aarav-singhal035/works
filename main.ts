@@ -3,11 +3,11 @@ let pot2 = 0
 let angle1 = 0
 let angle2 = 0
 input.onButtonPressed(Button.A, function () {
-    robotbit.StpCarMove(10, 48)
+    robotbit.StpCarMove(1, 48)
     robotbit.StepperTurn(robotbit.Steppers.M1, robotbit.Turns.T1B4)
 })
 input.onButtonPressed(Button.B, function () {
-    robotbit.StpCarMove(-10, 48)
+    robotbit.StpCarMove(-1, 48)
     robotbit.StepperTurn(robotbit.Steppers.M1, robotbit.Turns.T1B4)
 })
 basic.forever(function () {
